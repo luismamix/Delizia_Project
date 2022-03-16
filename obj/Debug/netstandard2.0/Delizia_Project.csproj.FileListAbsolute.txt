@@ -1,0 +1,16 @@
+/Users/tardes/Projects/Delizia_Project/Delizia_Project/bin/Debug/netstandard2.0/Delizia_Project.deps.json
+/Users/tardes/Projects/Delizia_Project/Delizia_Project/bin/Debug/netstandard2.0/Delizia_Project.dll
+/Users/tardes/Projects/Delizia_Project/Delizia_Project/bin/Debug/netstandard2.0/ref/Delizia_Project.dll
+/Users/tardes/Projects/Delizia_Project/Delizia_Project/bin/Debug/netstandard2.0/Delizia_Project.pdb
+/Users/tardes/Projects/Delizia_Project/Delizia_Project/obj/Debug/netstandard2.0/Delizia_Project.csproj.AssemblyReference.cache
+/Users/tardes/Projects/Delizia_Project/Delizia_Project/obj/Debug/netstandard2.0/Delizia_Project.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tardes/Projects/Delizia_Project/Delizia_Project/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/tardes/Projects/Delizia_Project/Delizia_Project/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
+/Users/tardes/Projects/Delizia_Project/Delizia_Project/obj/Debug/netstandard2.0/Delizia_Project.AssemblyInfoInputs.cache
+/Users/tardes/Projects/Delizia_Project/Delizia_Project/obj/Debug/netstandard2.0/Delizia_Project.AssemblyInfo.cs
+/Users/tardes/Projects/Delizia_Project/Delizia_Project/obj/Debug/netstandard2.0/Delizia_Project.csproj.CoreCompileInputs.cache
+/Users/tardes/Projects/Delizia_Project/Delizia_Project/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/tardes/Projects/Delizia_Project/Delizia_Project/obj/Debug/netstandard2.0/Delizia_Project.dll
+/Users/tardes/Projects/Delizia_Project/Delizia_Project/obj/Debug/netstandard2.0/ref/Delizia_Project.dll
+/Users/tardes/Projects/Delizia_Project/Delizia_Project/obj/Debug/netstandard2.0/Delizia_Project.pdb
+/Users/tardes/Projects/Delizia_Project/Delizia_Project/obj/Debug/netstandard2.0/VentanaPedido.xaml.g.cs

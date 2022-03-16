@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:system="clr-namespace:System;assembly=mscorlib"
+                 xmlns:viewmodels="clr-namespace:Delizia_Project.ViewModels"
+             x:Class="Delizia_Project.MainPage">
+     <ContentPage.BindingContext>
+        <viewmodels:MasterViewModel/>
+    </ContentPage.BindingContext>
+    <ScrollView>
+    <StackLayout>
+        
+        <Frame BackgroundColor="Orange" Padding="15" CornerRadius="25" Margin="15" >
+            <StackLayout Orientation="Horizontal"><Image Source="pizza.jpg" HeightRequest="75" WidthRequest="75"></Image><Label Text="Pizzeria Delizia"  HorizontalOptions="CenterAndExpand"  VerticalOptions="CenterAndExpand" TextColor="White" FontSize="28" FontAttributes="Italic"/></StackLayout>
+            
+        </Frame>
+        <StackLayout Orientation="Horizontal">
+            <StackLayout Padding="10"><Label TextColor="OrangeRed" Text="{Binding contenido.fecha}" FontSize="Medium" FontAttributes="Bold"></Label><Label x:Name="fecha" Text="{Binding Source={x:Static system:DateTime.Now}, StringFormat='{0:dd/MM/yyyy}'}"></Label></StackLayout>
+            <StackLayout Padding="10"><Label TextColor="OrangeRed" Text="{Binding contenido.hora}" FontSize="Medium" FontAttributes="Bold"></Label><TimePicker x:Name="hora"></TimePicker></StackLayout>
+        </StackLayout>
+       <StackLayout Orientation="Horizontal">
+             <StackLayout Padding="10"><Label TextColor="OrangeRed" Text="{Binding contenido.nombre}" FontSize="Medium" FontAttributes="Bold"></Label><Entry x:Name="nombre" WidthRequest="220"></Entry></StackLayout>
+        </StackLayout>
+        <Label Margin="10" TextColor="OrangeRed" FontSize="Medium" FontAttributes="Bold">Pizza</Label>
+         <Frame Padding="15" CornerRadius="5" Margin="15,0,15,15" BorderColor="Black">
+            <StackLayout >
+                <Label TextColor="OrangeRed" FontAttributes="Bold" FontSize="Medium" Text="{Binding contenido.tamanio}"  HorizontalOptions="CenterAndExpand"  VerticalOptions="CenterAndExpand" />
+                <Picker ItemsSource="{Binding Tamanios}"  ItemDisplayBinding="{Binding tamanio}" 
+                        SelectedItem="0" x:Name="picker_tamanio"></Picker>
+
+                 <Label TextColor="OrangeRed" FontAttributes="Bold" FontSize="Medium" Text="{Binding contenido.masa}"  HorizontalOptions="CenterAndExpand"  VerticalOptions="CenterAndExpand" />
+                <Picker ItemsSource="{Binding Masas}"  ItemDisplayBinding="{Binding masa}" 
+                        SelectedItem="0" x:Name="picker_masa"></Picker>
+                 <Label TextColor="OrangeRed" FontAttributes="Bold" FontSize="Medium" Text="{Binding contenido.tipo}" HorizontalOptions="CenterAndExpand"  VerticalOptions="CenterAndExpand" />
+                <Picker ItemsSource="{Binding Especialidades}"  ItemDisplayBinding="{Binding tipo}" 
+                        SelectedItem="0" x:Name="picker_especialidad"></Picker>
+                <StackLayout Orientation="Horizontal">
+                    <Button Padding="5" CornerRadius="5" BorderWidth="2" BorderColor="OrangeRed" BackgroundColor="White" x:Name="btn_añadir" FontAttributes="Bold" FontSize="Medium" TextColor="OrangeRed" Text="{Binding contenido.anadir}" HorizontalOptions="CenterAndExpand"  VerticalOptions="CenterAndExpand"></Button>
+                </StackLayout>
+                 <Label FontAttributes="Bold" x:Name="cantidad"  HorizontalOptions="CenterAndExpand"  VerticalOptions="CenterAndExpand" TextColor="OrangeRed"/>
+            </StackLayout>
+        </Frame>
+        <Button Padding="5" CornerRadius="5" BorderWidth="2" BorderColor ="OrangeRed" BackgroundColor="White" x:Name="btn_pedido" FontAttributes="Bold" FontSize="Medium" TextColor="OrangeRed" Text="{Binding contenido.pedido}" HorizontalOptions="CenterAndExpand"  VerticalOptions="CenterAndExpand"></Button>
+       <Label  Text="{Binding contenido.id_contenido}"></Label>
+        <Label  x:Name="dummy"></Label>
+       
+    </StackLayout>
+    </ScrollView>
+</ContentPage>

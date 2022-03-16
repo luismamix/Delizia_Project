@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Delizia_Project.VentanaPedido">
+
+    <ContentPage.Content>
+        
+        <ScrollView>
+            <StackLayout>
+                <Frame BackgroundColor="Orange" Padding="15" CornerRadius="25" Margin="15" >
+                    <StackLayout Orientation="Horizontal"><Image Source="order.jpg" HeightRequest="75" WidthRequest="75"></Image><Label Text="Detalles del Pedido"  HorizontalOptions="CenterAndExpand"  VerticalOptions="CenterAndExpand" TextColor="White" FontSize="28" FontAttributes="Italic"/></StackLayout>
+                </Frame>
+                <Frame BorderColor="Gray"
+                   CornerRadius="5"
+                    Padding="8" Margin="15">
+                    <StackLayout>
+                    <Label x:Name ="lbltitulo" Text=""
+                       FontSize="Medium"
+                       FontAttributes="Bold" />
+                      <Label x:Name ="lblnombre" Text=""
+                           FontSize="Medium"
+                           FontAttributes="Bold" />
+                    <BoxView Color="Gray"
+                             HeightRequest="2"
+                             HorizontalOptions="Fill" />
+                     <Grid Margin="10" x:Name ="tabla">
+   
+                     </Grid>
+
+                     <Image Margin="0,20,0,20" Source="cod_qr.png" Aspect="AspectFit" HeightRequest="175" WidthRequest="175" ></Image>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+            
+        </ScrollView>
+       
+    </ContentPage.Content>
+</ContentPage>
